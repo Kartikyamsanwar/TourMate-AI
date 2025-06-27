@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TourMate AI</title>
+  <link rel="stylesheet" href="src/styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="background-animation"></div>
+
+  <div class="container">
+    <h1>🌍 TourMate AI</h1>
+    <form id="tripForm">
+      <label for="employeeName">Employee Name</label>
+      <input type="text" id="employeeName" placeholder="Optional" />
+
+      <label for="destination">Destination</label>
+      <input type="text" id="destination" required />
+
+      <label for="purpose">Trip Purpose</label>
+      <input type="text" id="purpose" required />
+
+      <label for="departure">Departure Date</label>
+      <input type="date" id="departure" required />
+
+      <label for="returnDate">Return Date</label>
+      <input type="date" id="returnDate" required />
+
+      <label for="activities">Preferred Activities</label>
+      <input type="text" id="activities" placeholder="Optional" />
+
+      <label for="meetings">Meeting Schedule</label>
+      <textarea id="meetings" placeholder="Optional"></textarea>
+
+      <button type="submit">Generate Itinerary</button>
+    </form>
+
+    <div class="result" id="resultBox" style="display: none;">
+      <h3>🗓 Itinerary</h3>
+      <p id="itineraryText"></p>
+
+      <h3>🧾 Summary</h3>
+      <p id="summaryText"></p>
+    </div>
+  </div>
+
+  <script src="src/scripts/main.js"></script>
+</body>
+</html>
