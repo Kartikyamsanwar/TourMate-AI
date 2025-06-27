@@ -2,20 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TourMate AI</title>
+  <link rel="stylesheet" href="src/styles/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="src/styles/styles.css" />
-
 </head>
 <body>
+
+  <header>
+  <div class="logo-title">
+    <img src="src/img/WhatsApp Image 2025-06-27 at 9.23.13 PM.jpeg" alt="TourMate Logo" class="logo-img" />
+    <div class="text-content">
+      <h2>TourMate AI</h2>
+      <p>Your Smart Corporate Travel Companion</p>
+    </div>
+  </div>
+</header>
+
+
   <div class="background-animation"></div>
 
-
   <div class="container">
-  <div class="hero-image">
-  <img src="src/img/TourMatelogo.png" alt="Travel Banner">
-</div>    <form id="tripForm">
+    <div class="hero-image">
+      <img src="src/img/TourMatelogo.png" alt="Travel Banner">
+    </div>
+
+    <form id="tripForm">
+      <!-- Form Fields -->
       <label for="employeeName">Employee Name</label>
       <input type="text" id="employeeName" placeholder="Optional" />
 
@@ -46,8 +59,17 @@
 
       <h3>🧾 Summary</h3>
       <p id="summaryText"></p>
+
+      <h3>🌐 Multilingual Assistant</h3>
+      <ul id="translationText">
+        <!-- Translation phrases will be injected here -->
+      </ul>
     </div>
   </div>
+
+  <footer>
+    <p>Developed by <strong>CodeCrusaders</strong></p>
+  </footer>
 
   <script src="src/scripts/main.js"></script>
 </body>

@@ -133,3 +133,41 @@ button:hover {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-5px); }
 }
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+}
+
+header h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.text-content {
+  text-align: left;
+  color: #fff;
+}
